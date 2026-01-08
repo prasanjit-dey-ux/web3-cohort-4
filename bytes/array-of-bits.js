@@ -13,3 +13,9 @@ console.log(bytes);
 bytes[1]=400;
 console.log(bytes);
 
+
+/*
+    No error is thrown
+
+    - Uint8Array keeps only the lowest 8 bits
+*/
