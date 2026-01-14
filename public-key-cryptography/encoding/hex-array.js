@@ -10,3 +10,15 @@ function hexToArray(hexString) {
 const hex = "48656c6c6f";
 const byteArrayFromHex = hexToArray(hex);
 console.log(byteArrayFromHex); //Output: Uint8Array(5) [72, 101, 108, 108, 111]
+
+// Reverse operation (bytes → string)
+const text = new TextDecoder().decode(byteArrayFromHex);
+console.log(text);
+
+
+/*
+    Hex string 
+           → chop into 2-char pieces
+           → convert each piece to a number
+           → store in a byte array
+*/
